@@ -1,0 +1,22 @@
+{
+  "name": "attendance-mock-backend",
+  "version": "1.0.0",
+  "description": "A super simple backend to mock attendance data (in memory only).",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "attendance",
+    "mock",
+    "backend",
+    "express"
+  ],
+  "author": "Yuva Praneeth",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}

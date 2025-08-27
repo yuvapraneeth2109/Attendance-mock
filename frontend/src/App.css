@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f9;
+  color: #2d2d2d;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 16px;
+}
+
+.app-container {
+  background: #fff;
+  width: 100%;
+  max-width: 720px;
+  padding: 36px 44px;
+  border-radius: 10px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.app-container h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #243447;
+  margin-bottom: 28px;
+}
+
+.status-message {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 22px;
+  min-height: 22px;
+  color: #27ae60;
+  transition: color 0.25s ease;
+}
+
+.status-message.error {
+  color: #e74c3c;
+}
+
+.section {
+  background: #fafafa;
+  padding: 22px 26px;
+  border-radius: 8px;
+  margin-bottom: 26px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.04);
+  text-align: left;
+}
+
+.section h2,
+.section h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #34495e;
+  margin-bottom: 18px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 9px 0;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 1rem;
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+}
+
+.detail-row strong {
+  color: #2c3e50;
+}
+
+input[type="text"] {
+  width: 100%;
+  max-width: 320px;
+  padding: 11px 14px;
+  font-size: 1rem;
+  border: 2px solid #cbd5e0;
+  border-radius: 6px;
+  transition: border-color 0.25s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  padding: 12px 26px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 14px;
+  transition: background-color 0.25s ease;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.start-session-btn {
+  background: #2980b9;
+  color: #fff;
+  max-width: 260px;
+  width: 100%;
+}
+
+.start-session-btn:hover:not(:disabled) {
+  background: #1f5f87;
+}
+
+.end-session-btn {
+  background: #c0392b;
+  color: #fff;
+  max-width: 190px;
+  width: 100%;
+}
+
+.end-session-btn:hover {
+  background: #962d22;
+}
+
+.check-in-btn {
+  background: #27ae60;
+  color: #fff;
+  max-width: 150px;
+  width: 100%;
+}
+
+.check-in-btn:hover {
+  background: #1e8449;
+}
+
+.attendees-list ul {
+  list-style: none;
+  margin-top: 18px;
+  padding-left: 0;
+  border-top: 1px solid #dfe6e9;
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+.attendees-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 11px 16px;
+  border-bottom: 1px solid #dfe6e9;
+  font-size: 1rem;
+  color: #34495e;
+}
+
+.attendees-list li strong {
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.attendees-list li:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 480px) {
+  .app-container {
+    padding: 26px 18px;
+  }
+
+  input[type="text"],
+  button {
+    max-width: 100%;
+  }
+}
